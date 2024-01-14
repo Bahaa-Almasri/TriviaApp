@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Trivia App</h1>
+
+    <div id="timer">Time Left: <span id="countdown">0</span> seconds</div>
+
+    <form id="triviaForm">
+        <label for="numberOfQuestions">Number of Questions:</label>
+        <input type="number" id="numberOfQuestions" name="numberOfQuestions" min="1" value="10">
+
+        <label for="category">Select Category:</label>
+        <select id="category" name="category">
+            <option value="">Any Category</option>
+            <!-- Categories will be populated dynamically using JavaScript -->
+        </select>
+
+        <label for="difficulty">Select Difficulty:</label>
+        <select id="difficulty" name="difficulty">
+            <option value="">Any Difficulty</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+
+        <label for="type">Select Type:</label>
+        <select id="type" name="type">
+            <option value="">Any Type</option>
+            <option value="multiple">Multiple Choice</option>
+            <option value="boolean">True/False</option>
+        </select>
+
+        <div class="container">
+            <button type="button" onclick="startTrivia()">Start Trivia</button>
+        </div>
+    </form>
+
+    <div id="triviaContainer" style="display: none;">
+        <h2>Trivia Questions</h2>
+        <div id="questions"></div>
+        <!-- Update your HTML button -->
+        <div class="container">
+            <button type="button" onclick="submitAnswers()">Submit Answers</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <button type="button" id="resetButton" onclick="resetTrivia()" class="reset-button">Reset</button>
+    </div>
+
+    <footer>
+        <p>Made by Bahaa Almasri</p>
+        <p>&copy; 2024 Trivia App. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

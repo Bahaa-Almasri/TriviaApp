@@ -1,0 +1,164 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #292b2c;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    color: #17a2b8;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #343a40;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+}
+
+button {
+    background-color: #17a2b8;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #117a8b;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This is optional and centers vertically as well */
+    margin-bottom: 20px;
+}
+
+/* Add some styles for better readability */
+#questions {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Style each question container */
+#questions div {
+    margin-bottom: 20px;
+    margin-left: 2px;
+}
+
+/* Style question text */
+#questions p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style the options container */
+.options-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style each option */
+.option {
+    margin-right: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Highlight option on hover */
+.option:hover {
+    background-color: #767676;
+}
+
+/* Highlight option on click */
+.option.clicked {
+    background-color: #005e54;
+    color: white;
+}
+
+/* Style the "Submit Answers" button */
+#submitAnswers {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submitAnswers:hover {
+    background-color: #45a049;
+}
+
+.reset-button {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 999;
+}
+
+.option.correctShow {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.option.incorrect {
+    background-color: #FF0000;
+    color: white;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    top: 110px;
+    position: relative;
+}
+
+#timer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #343a40; /* Background color */
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+}
+
+.correctShowEndTime{
+    background-color: #ffb11f;
+    color: white;
+}
